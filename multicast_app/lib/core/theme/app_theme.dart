@@ -91,4 +91,85 @@ class AppTheme {
       ),
     ),
   );
+
+  static final ThemeData lightTheme = ThemeData(
+    brightness: Brightness.light,
+    scaffoldBackgroundColor: const Color(0xFFF5F5F5),
+    colorScheme: const ColorScheme.light(
+      primary: Color(0xFF00C853),
+      secondary: Color(0xFF00E676),
+      surface: Colors.white,
+      error: error,
+      onPrimary: Colors.white,
+      onSecondary: Colors.white,
+      onSurface: Colors.black87,
+      onError: Colors.white,
+    ),
+    useMaterial3: true,
+    fontFamily: 'Roboto',
+    textTheme: const TextTheme(
+      displayLarge: TextStyle(color: Colors.black87, fontWeight: FontWeight.bold, fontSize: 32),
+      displayMedium: TextStyle(color: Colors.black87, fontWeight: FontWeight.w600, fontSize: 28),
+      headlineMedium: TextStyle(color: Colors.black87, fontWeight: FontWeight.w600, fontSize: 24),
+      titleLarge: TextStyle(color: Colors.black87, fontWeight: FontWeight.w600, fontSize: 20),
+      bodyLarge: TextStyle(color: Colors.black87, fontSize: 16),
+      bodyMedium: TextStyle(color: Colors.black54, fontSize: 14),
+      labelLarge: TextStyle(color: Colors.black87, fontWeight: FontWeight.w500, fontSize: 14),
+    ),
+    appBarTheme: const AppBarTheme(
+      backgroundColor: Color(0xFFF5F5F5),
+      elevation: 0,
+      centerTitle: true,
+      iconTheme: IconThemeData(color: Color(0xFF00C853)),
+      titleTextStyle: TextStyle(
+        color: Colors.black87,
+        fontSize: 20,
+        fontWeight: FontWeight.w600,
+      ),
+    ),
+    bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+      backgroundColor: Colors.white,
+      selectedItemColor: Color(0xFF00C853),
+      unselectedItemColor: Colors.black54,
+      elevation: 8,
+      type: BottomNavigationBarType.fixed,
+    ),
+    navigationRailTheme: const NavigationRailThemeData(
+      backgroundColor: Colors.white,
+      selectedIconTheme: IconThemeData(color: Color(0xFF00C853)),
+      unselectedIconTheme: IconThemeData(color: Colors.black54),
+      selectedLabelTextStyle: TextStyle(color: Color(0xFF00C853)),
+      unselectedLabelTextStyle: TextStyle(color: Colors.black54),
+    ),
+    cardTheme: CardTheme(
+      color: Colors.white,
+      elevation: 2,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12),
+      ),
+    ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: const Color(0xFF00C853),
+        foregroundColor: Colors.white,
+        elevation: 0,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(8),
+        ),
+        padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+        textStyle: const TextStyle(fontWeight: FontWeight.w600, fontSize: 16),
+      ),
+    ),
+    outlinedButtonTheme: OutlinedButtonThemeData(
+      style: OutlinedButton.styleFrom(
+        foregroundColor: const Color(0xFF00C853),
+        side: const BorderSide(color: Color(0xFF00C853), width: 2),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(8),
+        ),
+        padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+        textStyle: const TextStyle(fontWeight: FontWeight.w600, fontSize: 16),
+      ),
+    ),
+  );
 }
